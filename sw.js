@@ -1,4 +1,4 @@
-const CACHE_NAME = 'studymate-v33';
+const CACHE_NAME = 'studymate-v45';
 const urlsToCache = ['./index.html', './app.js', './manifest.json'];
 
 // 1. Lưu đệm để mất mạng app vẫn mở lên được

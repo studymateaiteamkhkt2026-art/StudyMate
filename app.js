@@ -1,4 +1,4 @@
-const CACHE_NAME = 'studymate-v35';
+const CACHE_NAME = 'studymate-v45';
 const urlsToCache = ['./index.html', './app.js', './manifest.json'];
 
 // 1. Lưu đệm để mất mạng app vẫn mở lên được
@@ -131,7 +131,7 @@ function handleAuth() {
                 auth.signOut(); authStatus.innerText = "Yêu cầu xác thực Email!"; return;
             }
             authStatus.innerText = "Đang tải dữ liệu..."; currentUser = uc.user; loadUserDataFromCloud(currentUser.uid, e);
-        }).catch(err => authStatus.innerText = "Sai Email hoặc Mật khẩu!");
+        }).catch(err => alert("Lỗi thật sự là: " + err.message));
     }
 }
 
